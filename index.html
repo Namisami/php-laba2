@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <img class="header__logo" src="images/logo.png">
+    <h1 class="header__title">Задание для самостоятельной работы «Feedback form»</h1>
+</header>
+<main class="main">
+    <form action="https://httpbin.org/post" method="POST" class="form">
+        <label for="name">Имя пользователя</label>
+        <input type="text" id="name" name="name">
+        <label for="mail">Email</label>
+        <input type="email" id="mail" name="mail">
+        <p class="form__text">Тип обращения</p>
+        <div>
+            <input type="radio" id="complaint" name="appeal" value="complaint">
+            <label for="complaint">Жалоба</label>
+        </div>
+        <div>
+            <input type="radio" id="offer" name="appeal" value="offer">
+            <label for="offer">Предложение</label>
+        </div>
+        <div>
+            <input type="radio" id="thanks" name="appeal" value="thanks">
+            <label for="thanks">Благодарность</label>
+        </div>
+        <label for="appeal-text">Текст обращения</label>
+        <textarea name="appeal-text" id="appeal-text" cols="30" rows="10"></textarea>
+        <input class="form__submit" type="submit">
+    </form>
+    <a href="headers.php">Headers result</a>
+</main>
+<footer class="footer">
+    <p class="footer__text">Здесь могла быть ваша реклама</p>
+</footer>
+</body>
+</html>
